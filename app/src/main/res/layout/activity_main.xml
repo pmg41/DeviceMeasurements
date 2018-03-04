@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pragnesh.devicemeasurements.MainActivity">
+
+    <TextView
+        android:id="@+id/width1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/width1"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/height1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/width1"
+        android:layout_marginStart="10dp"
+        android:text="@string/height1"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/width2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/width2"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/height2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/width2"
+        android:text="@string/height2"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/width11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@+id/width1"
+        android:layout_toEndOf="@+id/width1"
+        android:text="@string/width11"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/height11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@+id/height1"
+        android:layout_toEndOf="@+id/height1"
+        android:text="@string/height11"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/width22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/height2"
+        android:layout_toEndOf="@+id/height2"
+        android:layout_marginStart="10dp"
+        android:text="@string/width22"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/height22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/height2"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/height2"
+        android:text="@string/height22"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/width11"
+        android:layout_alignStart="@+id/width1"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Method1"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/height1"
+        android:layout_below="@+id/height1"
+        android:layout_marginTop="51dp"
+        android:text="@string/Method2"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:text="@string/btn_name" />
+
+    <Button
+        android:id="@+id/without"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/height22"
+        android:layout_toEndOf="@+id/textView7"
+        android:text="@string/btn_name1" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="@string/clear" />
+
+</RelativeLayout>

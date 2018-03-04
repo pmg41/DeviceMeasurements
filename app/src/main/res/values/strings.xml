@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DeviceMeasurements</string>
+    <string name="height2">Height(px):</string>
+    <string name="height1">Height(px):</string>
+    <string name="width1">Width(px)  :</string>
+    <string name="width2">Width(px)  :</string>
+    <string name="Method1">With Method </string>
+    <string name="Method2">Without Method </string>
+    <string name="width11">0</string>
+    <string name="height11">0</string>
+    <string name="width22">0</string>
+    <string name="height22">0</string>
+    <string name="btn_name">Check With Method</string>
+    <string name="btn_name1">Check Without Method</string>
+    <string name="clear">Clear</string>
+</resources>
