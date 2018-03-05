@@ -12,6 +12,15 @@ public class MainActivity extends AppCompatActivity {
 
     TextView width11, width22, height22, height11;
     Button with, without, clear;
+    float density;
+
+    public static String getScreenWidth() {
+        return String.valueOf(Resources.getSystem().getDisplayMetrics().widthPixels);
+    }
+
+    public static String getScreenHeight() {
+        return String.valueOf(Resources.getSystem().getDisplayMetrics().heightPixels);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +33,17 @@ public class MainActivity extends AppCompatActivity {
         with = findViewById(R.id.with);
         clear = findViewById(R.id.clear);
         without = findViewById(R.id.without);
+
         final DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        density = getResources().getDisplayMetrics().density;
 
         //click event of CHECK WITH METHOD button
         with.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-                String height = String.valueOf(displayMetrics.heightPixels);
-                String width = String.valueOf(displayMetrics.widthPixels);
+                String height = String.valueOf((displayMetrics.heightPixels) / density) + "dp";
+                String width = String.valueOf((displayMetrics.widthPixels) / density) + "dp";
                 width11.setText(width);
                 height11.setText(height);
             }
@@ -58,13 +69,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public static String getScreenWidth() {
-        return String.valueOf(Resources.getSystem().getDisplayMetrics().widthPixels);
-    }
-
-    public static String getScreenHeight() {
-        return String.valueOf(Resources.getSystem().getDisplayMetrics().heightPixels);
     }
 }
